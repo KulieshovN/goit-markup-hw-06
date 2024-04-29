@@ -14,6 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .nav {
@@ -23,7 +24,7 @@
 
   .logo {
     display: inline-block;
-    margin-right: 76px;
+    /*margin-right: 76px;*/
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -31,6 +32,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    padding: 17px 0;
   }
   
   .logo-text {
@@ -38,86 +40,21 @@
   }
   
   .menu {
-    display: flex;
-    gap: 40px;
+    display: none;
     list-style-type: none;
   }
 
-  .nav-link-won{
-    padding: 24px 0;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    position: relative;
-    color: #404bbf;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .nav-link-won::after {
-    content: '';
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    height: 4px;
-    background-color: #404bbf;
-    border-radius: 2px;
-}
-
-  .nav-link-won:hover {
-    color: #404bbf;
-  }
-  
-  .nav-link-won:focus {
-    color: #404bbf;
-  }
- 
-  .nav-link {
-    padding: 24px 0;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-  }
-  
-  .nav-link:hover {
-    color: #404bbf;
-
-  }
-  
-  .nav-link:focus {
-    color: #404bbf;
-  }
-  
-  .contact-link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-  }
   
   .contact-info{
-    font-style: normal;
-    display: flex;
+    display: none;
   }
 
-  .contact-list {
-    display: flex;
-    gap: 40px;
-    list-style-type: none;
-  }
-  
-  .contact-link:hover {
-    color: #404bbf;
-  }
-  
-  .contact-link:focus {
-    color: #404bbf;
+  .open-menu-btn{
+    padding: 0;
+    line-height: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
   }
 
 
@@ -150,13 +87,22 @@
   
   .section-with-classes {
     background-color: #2e2f42;
-    padding: 188px 0;
+    /*padding: 188px 0;*/
+    padding-top: 72px;
+    padding-left: 52px;
+    padding-bottom: 72px;
+    padding-right: 72px;
+    font-weight: 700;
+    text-align: center;
     background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
       url("../images/people-office.jpg");
-     max-width: 1440px; 
+     /*max-width: 1440px;*/
+     max-width: 320px; 
+     display: flex;
+     flex-wrap: wrap;
      margin: 0 auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -165,14 +111,17 @@
   }
   
   .section-with-classes .container {
-    max-width: 1140px;
+    /*max-width: 1140px;*/
+    max-width: 320px;
     margin: 0 auto;
     padding: 0 15px;
     
 }
 
   .section-title {
-    max-width: 496px;
+    /*max-width: 496px;*/
+    max-width: 216px;
+    padding-bottom: 72px;
     margin: 0 auto;
     font-size: 56px;
     line-height: 1.07;
@@ -253,7 +202,8 @@
  }
 
  .icon-twoo {
-  display: flex;
+  /*display: flex;*/
+  display: none;
   align-items: center;
   justify-content: center;
   height: 112px;
@@ -261,12 +211,13 @@
   border-radius: 4px;
   border: 1px solid #8e8f99;
   margin-bottom: 8px;
+  
 }
 
   .my-list{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 72px;
     /*gap: 24px;*/
     padding: 0;
     list-style-type: none;
@@ -300,8 +251,23 @@
   .section-teams{
     margin-bottom: 8px;
     margin-bottom: 8px;
-    font-weight: 500;
-    font-size: 20px;
+    /*font-weight: 500;*/
+    font-weight: 700;
+    /*font-size: 20px;*/
+    font-style: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-align: center;
+  }
+
+  .section-teams-portf{
+    margin-bottom: 8px;
+    margin-bottom: 8px;
+    /*font-weight: 500;*/
+    font-weight: 700;
+    /*font-size: 20px;*/
+    font-style: 36px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
@@ -312,6 +278,7 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    font-weight: 500;
   
   }
 
@@ -358,8 +325,9 @@
     width: 162px;
     height: 40px;
     margin-bottom: 72px;
+    padding-left: 79px;
     font-size: 36px;
-    line-height: 1.11;
+    line-height: 111%;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
@@ -395,7 +363,8 @@
   }
   .img-portf{
     /*width: calc((100% - 48px) / 3); */
-    width: 100%;
+    width: 264px;
+    height: 428px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 
   }
@@ -507,7 +476,7 @@
   .right-right-side{
     display: flex;
     flex-wrap: wrap;
-    
+
   }
 
   .icon-item-foot{
@@ -851,24 +820,134 @@
 
   @media screen and (min-width: 768px) {
     .container{
-      width: 768px;
-      padding-left: 16px;
-      padding-right: 16px;
+      max-width: 768px;
     }
-    .antenna{
+    .logo {
+      margin-right: 120px;
+
+    }
+
+    .menu {
+      display: flex;
+      gap: 40px;
+    }
+
+
+    
+
+    .nav-link-won{
+      padding: 24px 0;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      color: #2e2f42;
+      position: relative;
+      color: #404bbf;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+    .nav-link-won::after {
+      content: '';
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      height: 4px;
+      background-color: #404bbf;
+      border-radius: 2px;
+  }
+  
+    .nav-link-won:hover {
+      color: #404bbf;
+    }
+    
+    .nav-link-won:focus {
+      color: #404bbf;
+    }
+   
+    .nav-link {
+      padding: 24px 0;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      color: #2e2f42;
+    }
+    
+    .nav-link:hover {
+      color: #404bbf;
+  
+    }
+    
+    .nav-link:focus {
+      color: #404bbf;
+    }
+    
+
+    .contact-info{
+      display: block ;
+    }
+
+    .contact-list {
+      display: flex;
+      gap: 12px;
+      flex-direction: column;
+    }
+
+    .contact-link {
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.02em;
+      color: #434455;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      
+    }
+  
+    
+    .contact-link:hover {
+      color: #404bbf;
+    }
+    
+    .contact-link:focus {
+      color: #404bbf;
+    }
+
+    .open-menu-btn{
       display: none;
     }
+
+
     .my-list{
       gap: 72px 24px;
     }
 
     .list-items{
       width: calc((100% - 24px) / 2);
+     
+
     }
+
+    .section-teams{
+      text-align: left;
+
+    }
+
+    
+    .img-list{
+      width: 264px;
+      height: 428px;
+
+    }
+
+
+    
 
     .teams-dream{
       width: 162px;
       height: 40px;
+      text-align: center;
+      padding-left: 316px;
     }
 
     .list-team{
@@ -877,14 +956,54 @@
       margin-bottom: 72px;
 
     }
+
+    .section-with-classes{
+      max-width: 768px;
+     display: flex;
+     flex-wrap: wrap;
+
+    }
+
+    .section-title {
+      max-width: 496px;
+    }
+
+    .section-with-classes .container {
+      max-width: 768px;
+    }
+
+    .img-portf{
+      width: calc((100% - 48px) / 2); 
   }
 
 
   @media screen and (min-width: 1158px) {
     .container{
-      width: 1158px;
-      padding-left: 16px;
-      padding-right: 16px;
+      max-width: 1158px;
+      padding: 0 15px;
+    }
+
+    .logo{
+      margin-right: 76px;
+
+    }
+
+    .contact-list{
+      flex-direction: row;
+      gap: 40px;
+    }
+
+    .contact-link{
+      font-style: 15px;
+      line-height: 1.5;
+    }
+
+    .menu {
+      display: flex;
+    }
+
+    .contact-info{
+      display: flex;
     }
 
 
@@ -896,7 +1015,50 @@
 
     .list-items{
       width: calc((100% - 72px) / 4);
+      width: 100%;
+     
+
     }
+
+    .icon-twoo {
+      display: flex;
+    }
+
+    .list-items{
+      width: calc((100% - 24px) / 4);
+     
+
+    }
+    
+    .section-teams{
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    .text{
+      font-weight: 400;
+    }
+
+
+
+    .section-with-classes{
+      max-width: 1440px;
+     display: flex;
+     flex-wrap: wrap;
+
+    }
+
+    .section-title {
+      max-width: 496px;
+    }
+
+    .section-with-classes .container {
+      max-width: 1140px;
+    }
+
+    .img-portf{
+      width: calc((100% - 48px) / 3); 
+  }
   }
   
  
