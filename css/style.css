@@ -922,10 +922,7 @@
   }
 
   .icon-foot-backdrop{
-    gap: 40;
     display: flex;
-    width: 40px;
-    height: 40px;
   }
 
   .icon-link-foot-backdrop{
