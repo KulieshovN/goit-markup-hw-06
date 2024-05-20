@@ -902,6 +902,12 @@
   .contact-info-backdrop{
     width: 193px;
     height: 72px;
+    
+
+  }
+
+  .contact-list-item-spacing{
+    margin-bottom: 24px;
 
   }
 
@@ -911,6 +917,8 @@
     line-height: 120%;
     letter-spacing: 0.02em;
     color: #4D5AE5;
+    font-style: normal;
+    
   }
 
   .contact-link-backdrop{
@@ -919,6 +927,7 @@
     line-height: 120%;
     letter-spacing: 0.02em;
     color: #434455;
+    font-style: normal;
   }
 
   .icon-foot-backdrop{
