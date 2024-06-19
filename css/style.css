@@ -98,14 +98,13 @@
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
       url("../images/Office-business/people-mob-min.jpg ");
-     /*max-width: 1440px;*/
-     max-width: 320px; 
+     /*max-width: 1440px;*/ 
      margin: 0 auto;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 72px;
+    padding: 72px 0;
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2), 
@@ -967,7 +966,7 @@
     width: 40px;
     height: 40px;
 
-  }
+  } 
 
   .icon-link-foot-bacdrop{
     width: 100%;
@@ -1116,11 +1115,10 @@
     }
 
     .section-teams{
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 120%;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 111%;
       letter-spacing: 0.02em;
-      text-align: center;
       color: #2E2F42;
 
     }
@@ -1145,7 +1143,6 @@
     }
 
     .section-with-classes{
-      max-width: 768px;
      display: flex;
      flex-wrap: wrap;
      padding-top: 112px;
@@ -1155,7 +1152,7 @@
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
       url("../images/Office-business/people-tab-min.jpg ");
-      padding: 72px;
+      padding: 112px 0;
     }
 
     @media screen and (-webkit-min-device-pixel-ratio: 2), 
@@ -1181,7 +1178,7 @@
     }
 
     .img-portf{
-      width: calc((100% - 48px) / 2); 
+      width: calc((100% - 24px) / 2); 
   }
 
   .section-teams-card{
@@ -1211,7 +1208,6 @@
   }
 
   .right-side{
-    margin-bottom: 0;
   }
 
   .right-right-side{
@@ -1350,7 +1346,7 @@
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
       url("../images/Office-business/people-desk-min.jpg");
-      padding: 72px;
+      padding: 188px 0;
 
     }
 
